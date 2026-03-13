@@ -1,0 +1,14 @@
+/* ==== ETH-RIG - COLOR VARIABLES ==== */
+/* ETH Raumbezogene Ingenieurwissenschaften Program */
+
+[data-studiengang="eth-rig"] {
+    /* Primary program color */
+    --color-primary: #059669;
+
+    /* Category colors */
+    --color-grundlagen: #dc2626;
+    --color-obligatorisch: #ea580c;
+    --color-wahlmodule: #16a34a;
+    --color-freie-wahl: #0284c7;
+    --color-selbstaendig: #7c3aed;
+}

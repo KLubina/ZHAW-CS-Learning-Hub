@@ -1,0 +1,24 @@
+/* ==== UZH ETHNOLOGIE - CSS CLASSES ==== */
+/* Program-specific CSS classes for Ethnologie (Major-Minor)
+   Only keep selectors for implemented categories: Pflicht, Wahlpflicht, Wahlmodule */
+
+/* Pflicht */
+[data-studiengang="uzh-ethnologie"] .modul.pflicht,
+[data-studiengang="uzh-ethnologie"] .legende-item.pflicht {
+    background-color: var(--color-pflicht);
+    color: var(--color-pflicht-text, white);
+}
+
+/* Wahlpflicht */
+[data-studiengang="uzh-ethnologie"] .modul.wahlpflicht,
+[data-studiengang="uzh-ethnologie"] .legende-item.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: var(--color-wahlpflicht-text, white);
+}
+
+/* Wahlmodule */
+[data-studiengang="uzh-ethnologie"] .modul.wahlmodule,
+[data-studiengang="uzh-ethnologie"] .legende-item.wahlmodule {
+    background-color: var(--color-wahl);
+    color: var(--color-wahl-text, white);
+}

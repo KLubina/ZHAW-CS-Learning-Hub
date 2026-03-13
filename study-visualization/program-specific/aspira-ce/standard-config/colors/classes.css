@@ -1,0 +1,44 @@
+/* ==== ASPIRA-CE - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="aspira-ce"] .modul.foundations,
+[data-studiengang="aspira-ce"] .legende-item.foundations {
+    background-color: var(--color-foundations);
+    color: var(--color-foundations-text, white);
+}
+
+[data-studiengang="aspira-ce"] .modul.programming,
+[data-studiengang="aspira-ce"] .legende-item.programming {
+    background-color: var(--color-programming);
+    color: var(--color-programming-text, white);
+}
+
+[data-studiengang="aspira-ce"] .modul.systems,
+[data-studiengang="aspira-ce"] .legende-item.systems {
+    background-color: var(--color-systems);
+    color: var(--color-systems-text, white);
+}
+
+[data-studiengang="aspira-ce"] .modul.webmobile,
+[data-studiengang="aspira-ce"] .legende-item.webmobile {
+    background-color: var(--color-webmobile);
+    color: var(--color-webmobile-text, white);
+}
+
+[data-studiengang="aspira-ce"] .modul.security,
+[data-studiengang="aspira-ce"] .legende-item.security {
+    background-color: var(--color-security);
+    color: var(--color-security-text, white);
+}
+
+[data-studiengang="aspira-ce"] .modul.professional,
+[data-studiengang="aspira-ce"] .legende-item.professional {
+    background-color: var(--color-professional);
+    color: var(--color-professional-text, white);
+}
+
+[data-studiengang="aspira-ce"] .modul.project,
+[data-studiengang="aspira-ce"] .legende-item.project {
+    background-color: var(--color-project);
+    color: var(--color-project-text, white);
+}

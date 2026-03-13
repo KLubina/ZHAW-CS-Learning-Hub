@@ -1,0 +1,13 @@
+/* ==== ASPIRA-CE - COLOR VARIABLES ==== */
+/* ASPIRA Computational Engineering Program */
+
+[data-studiengang="aspira-ce"] {
+    /* Category-specific colors */
+    --color-foundations: #3b82f6;
+    --color-programming: #8b5cf6;
+    --color-systems: #10b981;
+    --color-webmobile: #f59e0b;
+    --color-security: #ef4444;
+    --color-professional: #06b6d4;
+    --color-project: #84cc16;
+}

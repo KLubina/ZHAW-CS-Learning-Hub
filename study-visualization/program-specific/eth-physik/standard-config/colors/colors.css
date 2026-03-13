@@ -1,0 +1,20 @@
+/* ==== ETH-PHYSIK - COLOR VARIABLES ==== */
+/* ETH Physik Program */
+
+[data-studiengang="eth-physik"] {
+    /* Primary program color */
+    --color-primary: #db2777;
+
+    /* Category colors */
+    --color-basis1: #dc2626;
+    --color-basis2: #ea580c;
+    --color-pruefung1: #d97706;
+    --color-pruefung2a: #f59e0b;
+    --color-pruefung2b: #fbbf24;
+    --color-obligatorisch: #16a34a;
+    --color-praktikum: #db2777;
+    --color-kernfach: #0284c7;
+    --color-wahl: #059669;
+    --color-gess: #7c3aed;
+    --color-wissenschaft: #9333ea;
+}

@@ -1,0 +1,37 @@
+/* ==== HSSH-IT - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="hssh-it"] .modul.grundlagen {
+    background-color: var(--color-grundlagen);
+    color: white;
+}
+
+[data-studiengang="hssh-it"] .modul.programmierung {
+    background-color: var(--color-programmierung);
+    color: white;
+}
+
+[data-studiengang="hssh-it"] .modul.kommunikation {
+    background-color: var(--color-kommunikation);
+    color: white;
+}
+
+[data-studiengang="hssh-it"] .modul.transfer {
+    background-color: var(--color-transfer);
+    color: white;
+}
+
+[data-studiengang="hssh-it"] .modul.spezialisierung {
+    background-color: var(--color-spezialisierung);
+    color: white;
+}
+
+[data-studiengang="hssh-it"] .modul.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: white;
+}
+
+[data-studiengang="hssh-it"] .modul.abschluss {
+    background-color: var(--color-abschluss);
+    color: white;
+}
