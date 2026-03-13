@@ -1,5 +1,11 @@
 window.StudiengangColorManagerModes = window.StudiengangColorManagerModes || {};
 
+window.StudiengangColorManagerDefaultMode = "modulgruppe";
+window.StudiengangColorManagerStandardMode = {
+  label: "Themengebiet",
+  order: 2,
+};
+
 window.StudiengangColorManagerModes.modulgruppe = {
   label: "Modulgruppen",
   order: 1,

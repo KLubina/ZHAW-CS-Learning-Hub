@@ -16,8 +16,10 @@ window.StudienplanColorManager = {
 
     const created = this.createColorModeSelector();
 
-    // Setze Default-Mode (auch wenn kein Selector erstellt wurde, aktualisieren wir die Legende)
-    this.setMode("standard"); // Default mode
+    // Setze konfigurierbaren Default-Mode
+    const defaultMode = this.getDefaultModeKey();
+    this.currentMode = defaultMode;
+    this.setMode(defaultMode);
 
     if (created) {
       this._initialized = true;
@@ -27,32 +29,46 @@ window.StudienplanColorManager = {
   createColorModeSelector() {
     if (!window.StudiengangColorManagerModes) return false;
 
+    const customModeKeys = Object.keys(window.StudiengangColorManagerModes);
+    if (customModeKeys.length === 0) return false;
+
     const selectorContainer = document.createElement("div");
     selectorContainer.id = "color-mode-selector";
     selectorContainer.style.marginBottom = "20px";
     selectorContainer.style.textAlign = "center";
     selectorContainer.innerHTML = `
             <label for="color-mode-select" style="margin-right: 10px; font-weight: bold;">Farbmodus:</label>
-            <select id="color-mode-select" style="padding: 5px; border-radius: 4px;">
-                <option value="standard">Standard</option>
-            </select>
+            <select id="color-mode-select" style="padding: 5px; border-radius: 4px;"></select>
         `;
 
-    // Füge Modi hinzu
+    // Füge Standard- und projektspezifische Modi hinzu
     const select = selectorContainer.querySelector("#color-mode-select");
-    const modes = Object.keys(window.StudiengangColorManagerModes).sort(
-      (a, b) =>
-        (window.StudiengangColorManagerModes[a].order || 0) -
-        (window.StudiengangColorManagerModes[b].order || 0),
-    );
+    const standardMode = this.getStandardModeConfig();
+    const modeEntries = [
+      {
+        key: "standard",
+        label: standardMode.label,
+        order: standardMode.order,
+      },
+      ...customModeKeys.map((modeKey) => {
+        const mode = window.StudiengangColorManagerModes[modeKey];
+        return {
+          key: modeKey,
+          label: mode.label,
+          order: mode.order || 0,
+        };
+      }),
+    ].sort((a, b) => a.order - b.order);
 
-    modes.forEach((modeKey) => {
-      const mode = window.StudiengangColorManagerModes[modeKey];
+    modeEntries.forEach((entry) => {
       const option = document.createElement("option");
-      option.value = modeKey;
-      option.textContent = mode.label;
+      option.value = entry.key;
+      option.textContent = entry.label;
       select.appendChild(option);
     });
+
+    const defaultMode = this.getDefaultModeKey();
+    select.value = defaultMode;
 
     // Event listener
     select.addEventListener("change", (e) => {
@@ -73,6 +89,26 @@ window.StudienplanColorManager = {
     }
 
     return true;
+  },
+
+  getStandardModeConfig() {
+    const configured = window.StudiengangColorManagerStandardMode || {};
+    return {
+      label: configured.label || "Standard",
+      order: typeof configured.order === "number" ? configured.order : 0,
+    };
+  },
+
+  getDefaultModeKey() {
+    const configured = window.StudiengangColorManagerDefaultMode;
+    if (
+      configured &&
+      (configured === "standard" ||
+        window.StudiengangColorManagerModes?.[configured])
+    ) {
+      return configured;
+    }
+    return "standard";
   },
 
   setMode(modeKey) {
@@ -208,7 +244,8 @@ window.StudienplanColorManager = {
     let categories = [];
 
     if (modeKey === "standard") {
-      if (legendTitle) legendTitle.textContent = "Farben-Legende";
+      const standardMode = this.getStandardModeConfig();
+      if (legendTitle) legendTitle.textContent = `${standardMode.label}-Legende`;
       // Verwende die standard Kategorien
       const modules = document.querySelectorAll(".modul");
       const cats = new Set();
