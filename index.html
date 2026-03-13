@@ -4,36 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Informatik (Teilzeit) - ZHAW</title>
     <link rel="icon" type="image/svg+xml" href="https://www.svgrepo.com/show/400288/graduationcap.svg">
     <link rel="icon" type="image/png" sizes="256x256" href="https://images.emojiterra.com/mozilla/512px/1f393.png">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #f7f9fa;
+            /* Match typical background */
+        }
 
-    <link rel="stylesheet" href="css/main.css">
-
-    <title>StudiumHub</title>
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="studiengang-list">
-            <div class="studiengang-item">
-                <div class="studiengang-name">Informatik (Vollzeit)</div>
-                <div class="studiengang-ects">BSc</div>
-                <a href="study-visualization/standard/studienplan-template.html?studiengang=fhzh-cs"
-                    style="margin-top: 5px; display: inline-block; color: #0066cc; text-decoration: none; font-size: 0.9em;">
-                    → Visualisierung ansehen
-                </a>
-            </div>
-            <div class="studiengang-item">
-                <div class="studiengang-name">Informatik (Teilzeit)</div>
-                <div class="studiengang-ects">BSc</div>
-                <a href="study-visualization/standard/studienplan-template.html?studiengang=fhzh-cs-tz"
-                    style="margin-top: 5px; display: inline-block; color: #0066cc; text-decoration: none; font-size: 0.9em;">
-                    → Visualisierung ansehen
-                </a>
-            </div>
-        </div>
-    </div>
+    <iframe src="study-visualization/standard/studienplan-template.html?studiengang=fhzh-cs-tz"
+        title="Studienplan Informatik Teilzeit"></iframe>
 </body>
 
 </html>
