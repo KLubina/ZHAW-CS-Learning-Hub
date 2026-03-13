@@ -1,8 +1,0 @@
-/* ==== UZH ETHNOLOGIE - COLOR VARIABLES (pruned) ==== */
-/* Only variables needed for implemented categories: Pflicht, Wahlpflicht, Wahlmodule */
-
-[data-studiengang="uzh-ethnologie"] {
-    --color-pflicht: #e84393;
-    --color-wahlpflicht: #fd79a8;
-    --color-wahl: #fdcb6e;
-}
