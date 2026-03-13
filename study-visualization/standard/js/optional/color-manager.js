@@ -202,11 +202,13 @@ window.StudienplanColorManager = {
 
   updateLegend(modeKey) {
     const legendContainer = document.getElementById("legende");
+    const legendTitle = document.getElementById("legende-titel");
     if (!legendContainer) return;
 
     let categories = [];
 
     if (modeKey === "standard") {
+      if (legendTitle) legendTitle.textContent = "Farben-Legende";
       // Verwende die standard Kategorien
       const modules = document.querySelectorAll(".modul");
       const cats = new Set();
@@ -219,6 +221,7 @@ window.StudienplanColorManager = {
       categories = Array.from(cats);
     } else {
       const mode = window.StudiengangColorManagerModes[modeKey];
+      if (legendTitle) legendTitle.textContent = `${mode.label}-Legende`;
       categories = mode.getCategories().map((c) => c.klasse);
     }
 

@@ -1,0 +1,36 @@
+/* Modulgruppen Klassen */
+
+.modul.it1-color,
+.legende-item.it1-color {
+  background-color: var(--modulgruppe-it1);
+}
+
+.modul.it2-color,
+.legende-item.it2-color {
+  background-color: var(--modulgruppe-it2);
+}
+
+.modul.it3-color,
+.legende-item.it3-color {
+  background-color: var(--modulgruppe-it3);
+}
+
+.modul.it4-color,
+.legende-item.it4-color {
+  background-color: var(--modulgruppe-it4);
+}
+
+.modul.it5-color,
+.legende-item.it5-color {
+  background-color: var(--modulgruppe-it5);
+}
+
+.modul.it6-color,
+.legende-item.it6-color {
+  background-color: var(--modulgruppe-it6);
+}
+
+.modul.pm-color,
+.legende-item.pm-color {
+  background-color: var(--modulgruppe-pm);
+}

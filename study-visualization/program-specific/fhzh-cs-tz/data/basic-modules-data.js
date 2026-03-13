@@ -6,6 +6,7 @@ window.StudiengangModules = [
   // #region 1. Semester (22 ECTS)
   {
     name: "Wirtschaft für Ingenieure",
+    modulgruppe: "IT3",
     ects: 2,
     standardcategory: "kontext",
     year: 1,
@@ -13,6 +14,7 @@ window.StudiengangModules = [
   },
   {
     name: "Software-Projekt 1",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "projekt",
     year: 1,
@@ -20,6 +22,7 @@ window.StudiengangModules = [
   },
   {
     name: "Programmieren 1",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "fach",
     year: 1,
@@ -27,6 +30,7 @@ window.StudiengangModules = [
   },
   {
     name: "Information & Codierung",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "fach",
     year: 1,
@@ -34,6 +38,7 @@ window.StudiengangModules = [
   },
   {
     name: "Analysis 1",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "mathe-nawi",
     year: 1,
@@ -41,6 +46,7 @@ window.StudiengangModules = [
   },
   {
     name: "Diskrete Mathematik",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "mathe-nawi",
     year: 1,
@@ -51,6 +57,7 @@ window.StudiengangModules = [
   // #region 2. Semester (22 ECTS)
   {
     name: "Communication Competition Basic",
+    modulgruppe: "IT1",
     ects: 2,
     standardcategory: "kontext",
     year: 1,
@@ -58,6 +65,7 @@ window.StudiengangModules = [
   },
   {
     name: "Software-Projekt 2",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "projekt",
     year: 1,
@@ -65,6 +73,7 @@ window.StudiengangModules = [
   },
   {
     name: "Programmieren 2",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "fach",
     year: 1,
@@ -72,6 +81,7 @@ window.StudiengangModules = [
   },
   {
     name: "Theoretische Informatik",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "fach",
     year: 1,
@@ -79,6 +89,7 @@ window.StudiengangModules = [
   },
   {
     name: "Analysis 2",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "mathe-nawi",
     year: 1,
@@ -86,6 +97,7 @@ window.StudiengangModules = [
   },
   {
     name: "Lineare Algebra",
+    modulgruppe: "IT1",
     ects: 4,
     standardcategory: "mathe-nawi",
     year: 1,
@@ -96,6 +108,7 @@ window.StudiengangModules = [
   // #region 3. Semester (22 ECTS)
   {
     name: "Wahlpflichtmodul Kommunikation",
+    modulgruppe: "IT3",
     ects: 2,
     standardcategory: "kontext",
     year: 2,
@@ -103,6 +116,7 @@ window.StudiengangModules = [
   },
   {
     name: "Datenbanken",
+    modulgruppe: "IT2",
     ects: 4,
     standardcategory: "fach",
     year: 2,
@@ -110,6 +124,7 @@ window.StudiengangModules = [
   },
   {
     name: "Algorithmen & Datenstrukturen",
+    modulgruppe: "IT3",
     ects: 4,
     standardcategory: "fach",
     year: 2,
@@ -117,6 +132,7 @@ window.StudiengangModules = [
   },
   {
     name: "Stochastik und Statistik",
+    modulgruppe: "IT3",
     ects: 4,
     standardcategory: "mathe-nawi",
     year: 2,
@@ -124,6 +140,7 @@ window.StudiengangModules = [
   },
   {
     name: "Höhere Mathematik für Informatiker 1",
+    modulgruppe: "IT3",
     ects: 4,
     standardcategory: "mathe-nawi",
     year: 2,
@@ -131,6 +148,7 @@ window.StudiengangModules = [
   },
   {
     name: "Grundlagen der Elektrotechnik und Digitaltechnik",
+    modulgruppe: "IT2",
     ects: 4,
     standardcategory: "fach",
     year: 2,
@@ -141,6 +159,7 @@ window.StudiengangModules = [
   // #region 4. Semester (22 ECTS)
   {
     name: "Wahlpflichtmodul Kommunikation",
+    modulgruppe: "IT3",
     ects: 2,
     standardcategory: "kontext",
     year: 2,
@@ -148,6 +167,7 @@ window.StudiengangModules = [
   },
   {
     name: "Software-Projekt 3",
+    modulgruppe: "IT3",
     ects: 4,
     standardcategory: "projekt",
     year: 2,
@@ -155,6 +175,7 @@ window.StudiengangModules = [
   },
   {
     name: "Software-Entwicklung",
+    modulgruppe: "IT3",
     ects: 4,
     standardcategory: "fach",
     year: 2,
@@ -162,6 +183,7 @@ window.StudiengangModules = [
   },
   {
     name: "Kommunikationstechnik",
+    modulgruppe: "IT2",
     ects: 4,
     standardcategory: "fach",
     year: 2,
@@ -169,6 +191,7 @@ window.StudiengangModules = [
   },
   {
     name: "Systemnahe Programmierung",
+    modulgruppe: "IT2",
     ects: 4,
     standardcategory: "fach",
     year: 2,
@@ -176,6 +199,7 @@ window.StudiengangModules = [
   },
   {
     name: "Höhere Mathematik für Informatiker 2",
+    modulgruppe: "IT3",
     ects: 4,
     standardcategory: "mathe-nawi",
     year: 2,
@@ -186,6 +210,7 @@ window.StudiengangModules = [
   // #region 5. Semester (22 ECTS)
   {
     name: "Wahlpflichtmodul Kontext",
+    modulgruppe: "IT5",
     ects: 2,
     standardcategory: "kontext",
     year: 3,
@@ -193,6 +218,7 @@ window.StudiengangModules = [
   },
   {
     name: "Web-Entwicklung",
+    modulgruppe: "IT4",
     ects: 4,
     standardcategory: "fach",
     year: 3,
@@ -200,6 +226,7 @@ window.StudiengangModules = [
   },
   {
     name: "Computertechnik 1",
+    modulgruppe: "IT4",
     ects: 4,
     standardcategory: "fach",
     year: 3,
@@ -207,6 +234,7 @@ window.StudiengangModules = [
   },
   {
     name: "IT Security",
+    modulgruppe: "IT4",
     ects: 4,
     standardcategory: "fach",
     year: 3,
@@ -214,6 +242,7 @@ window.StudiengangModules = [
   },
   {
     name: "Introduction to Machine Learning",
+    modulgruppe: "IT4",
     ects: 4,
     standardcategory: "fach",
     year: 3,
@@ -221,6 +250,7 @@ window.StudiengangModules = [
   },
   {
     name: "Wahlpflichtmodul Fach 1",
+    modulgruppe: "IT6",
     ects: 4,
     standardcategory: "wahlpflicht",
     year: 3,
@@ -233,6 +263,7 @@ window.StudiengangModules = [
   // #region 6. Semester (22 ECTS)
   {
     name: "Wahlpflichtmodul Kontext",
+    modulgruppe: "IT5",
     ects: 2,
     standardcategory: "kontext",
     year: 3,
@@ -240,6 +271,7 @@ window.StudiengangModules = [
   },
   {
     name: "Software-Projekt 4",
+    modulgruppe: "IT4",
     ects: 4,
     standardcategory: "projekt",
     year: 3,
@@ -247,6 +279,7 @@ window.StudiengangModules = [
   },
   {
     name: "Software-Entwicklung 2",
+    modulgruppe: "IT4",
     ects: 2,
     standardcategory: "fach",
     year: 3,
@@ -254,6 +287,7 @@ window.StudiengangModules = [
   },
   {
     name: "Computertechnik 2",
+    modulgruppe: "IT4",
     ects: 4,
     standardcategory: "fach",
     year: 3,
@@ -261,6 +295,7 @@ window.StudiengangModules = [
   },
   {
     name: "Betriebssysteme",
+    modulgruppe: "IT4",
     ects: 4,
     standardcategory: "fach",
     year: 3,
@@ -268,6 +303,7 @@ window.StudiengangModules = [
   },
   {
     name: "Wahlpflichtmodul Fach 2",
+    modulgruppe: "IT6",
     ects: 4,
     standardcategory: "wahlpflicht",
     year: 3,
@@ -277,6 +313,7 @@ window.StudiengangModules = [
   },
   {
     name: "Physik Engines",
+    modulgruppe: "IT4",
     ects: 2,
     standardcategory: "mathe-nawi",
     year: 3,
@@ -287,6 +324,7 @@ window.StudiengangModules = [
   // #region 7. Semester (24 ECTS)
   {
     name: "Projektarbeit in Informatik",
+    modulgruppe: "PM",
     ects: 6,
     standardcategory: "projekt",
     year: 4,
@@ -294,6 +332,7 @@ window.StudiengangModules = [
   },
   {
     name: "Wahlpflichtmodul Fach 3",
+    modulgruppe: "IT6",
     ects: 4,
     standardcategory: "wahlpflicht",
     year: 4,
@@ -303,6 +342,7 @@ window.StudiengangModules = [
   },
   {
     name: "Wahlpflichtmodul Fach 5",
+    modulgruppe: "IT6",
     ects: 4,
     standardcategory: "wahlpflicht",
     year: 4,
@@ -312,6 +352,7 @@ window.StudiengangModules = [
   },
   {
     name: "Wahlpflichtmodul Fach 7",
+    modulgruppe: "IT6",
     ects: 4,
     standardcategory: "wahlpflicht",
     year: 4,
@@ -321,6 +362,7 @@ window.StudiengangModules = [
   },
   {
     name: "Wahlpflichtmodul Interdisziplinär",
+    modulgruppe: "IT6",
     ects: 4,
     standardcategory: "wahlpflicht",
     year: 4,
@@ -331,6 +373,7 @@ window.StudiengangModules = [
   // #region 8. Semester (24 ECTS)
   {
     name: "Bachelorarbeit in Informatik",
+    modulgruppe: "PM",
     ects: 12,
     standardcategory: "projekt",
     year: 4,
@@ -338,6 +381,7 @@ window.StudiengangModules = [
   },
   {
     name: "Wahlpflichtmodul Fach 4",
+    modulgruppe: "IT6",
     ects: 4,
     standardcategory: "wahlpflicht",
     year: 4,
@@ -347,6 +391,7 @@ window.StudiengangModules = [
   },
   {
     name: "Wahlpflichtmodul Fach 6",
+    modulgruppe: "IT6",
     ects: 4,
     standardcategory: "wahlpflicht",
     year: 4,
@@ -356,6 +401,7 @@ window.StudiengangModules = [
   },
   {
     name: "Wahlpflichtmodul Fach 8",
+    modulgruppe: "IT6",
     ects: 4,
     standardcategory: "wahlpflicht",
     year: 4,
