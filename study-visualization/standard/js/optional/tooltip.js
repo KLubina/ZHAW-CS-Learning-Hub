@@ -9,6 +9,11 @@ window.StudienplanTooltip = {
   initialize() {
     // Klick-Listener für alle Module (außer Platzhaltern)
     document.addEventListener("click", (e) => {
+      if (e.target.closest(".module-material-button")) {
+        // Material-Button wird vom Modul-Handler verarbeitet
+        return;
+      }
+
       const modul = e.target.closest(".modul");
       if (modul && !modul.classList.contains("modul-platzhalter")) {
         e.preventDefault();

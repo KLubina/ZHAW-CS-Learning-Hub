@@ -8,17 +8,14 @@ window.StudienplanWahlmodule = {
   initialize() {
     // Klick-Listener für Platzhalter-Module
     document.addEventListener("click", (e) => {
-      console.log("Click detected:", e.target);
       const modul = e.target.closest(".modul-platzhalter");
-      console.log("Platzhalter gefunden:", modul);
-      if (modul) {
-        const source = modul.getAttribute("data-wahlmodul-source");
-        console.log("Source:", source);
-        if (source) {
-          e.preventDefault();
-          e.stopPropagation();
-          window.StudienplanWahlmodule.openWahlmodulDialog(source, modul);
-        }
+      if (!modul) return;
+
+      const source = modul.getAttribute("data-wahlmodul-source");
+      if (source) {
+        e.preventDefault();
+        e.stopPropagation();
+        window.StudienplanWahlmodule.openWahlmodulDialog(source, modul);
       }
     });
 
@@ -26,14 +23,6 @@ window.StudienplanWahlmodule = {
     setTimeout(() => {
       const platzhalter = document.querySelectorAll(".modul-platzhalter");
       console.log("Platzhalter gefunden:", platzhalter.length);
-      platzhalter.forEach((p) => {
-        console.log(
-          "Platzhalter:",
-          p.querySelector(".modul-titel")?.textContent,
-          "Source:",
-          p.getAttribute("data-wahlmodul-source"),
-        );
-      });
     }, 1000);
 
     console.log("Wahlmodule initialisiert");

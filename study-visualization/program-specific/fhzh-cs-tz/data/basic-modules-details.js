@@ -59,6 +59,8 @@ window.StudiengangModuleDetails = {
       "► Unterrichtssprache\n" +
       "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.XV.DB.22HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\3. Semester\\Datenbanken\\Datenbanken.pdf",
   },
   "Information & Codierung": {
     kurzbeschreibung:
@@ -75,6 +77,8 @@ window.StudiengangModuleDetails = {
       "► Unterrichtssprache\n" +
       "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.INCO.13HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\1. Semester\\Information & Codierung\\Information & Codierung.pdf",
   },
   "Analysis 1": {
     kurzbeschreibung:
@@ -89,6 +93,8 @@ window.StudiengangModuleDetails = {
       "► Unterrichtssprache\n" +
       "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.XXM1.AN1.19HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\1. Semester\\Analysis-1.pdf",
   },
   "Diskrete Mathematik": {
     kurzbeschreibung:
@@ -104,6 +110,8 @@ window.StudiengangModuleDetails = {
       "► Unterrichtssprache\n" +
       "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.ITM.DM.19HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\1. Semester\\Diskrete-Mathematik.pdf",
   },
   "Grundlagen der Elektrotechnik und Digitaltechnik": {
     kurzbeschreibung:
@@ -202,6 +210,8 @@ window.StudiengangModuleDetails = {
     inhalt:
       "Grundbegriffe sowie Konzepte der theoretischen Informatik, Modelle zur Beurteilung der Leistungsfähigkeit aktueller und zukünftiger Computersysteme: Formale Sprachen, Automatentheorie, Berechenbarkeit und Komplexität. // Unterrichtssprache: DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.THIN.19HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\2. Semester\\Theoretische Informatik\\Theoretische-Informatik.pdf",
   },
   "Analysis 2": {
     kurzbeschreibung:
@@ -209,12 +219,16 @@ window.StudiengangModuleDetails = {
     inhalt:
       "Grundlegende Konzepte und Methoden der Differential- und Integralrechnung in einer reellen Variablen, sowie deren Anwendung. // Unterrichtssprache: DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.XXM1.AN2.19HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\2. Semester\\Analysis-2.pdf",
   },
   "Lineare Algebra": {
     kurzbeschreibung: "Grundlagen der Linearen Algebra",
     inhalt:
       "Das Modul lehrt die Grundlagen der Linearen Algebra. Dabei erlernen Sie unter anderem den Umgang mit Linearen Gleichungssystemen, Vektoren und Matrizen. // Unterrichtssprache: DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.ITM.LA.19HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\2. Semester\\Lineare-Algebra.pdf",
   },
   "Wahlpflichtmodul Kommunikation": {
     kurzbeschreibung: "Auswahl aus verschiedenen Kommunikationsmodulen",
@@ -300,18 +314,24 @@ window.StudiengangModuleDetails = {
       "► Unterrichtssprache\n" +
       "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.ADS.13HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\3. Semester\\Algorithmen & Datenstrukturen\\ADS-Komplett-DE.pdf",
   },
   "Stochastik und Statistik": {
     kurzbeschreibung: "Grundlagen der Wahrscheinlichkeitstheorie und Statistik",
     inhalt:
       "Das Modul führt in die für das vertiefte Verständnis vieler Bereiche unerlässlichen Begriffe und Konzepte der Wahrscheinlichkeitstheorie und der Statistik ein. // Unterrichtssprache: DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.XXM5.STS.19HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\3. Semester\\Stochastik und Statistik.pdf",
   },
   "Höhere Mathematik für Informatiker 1": {
     kurzbeschreibung: "Grundlagen der numerischen Mathematik für Informatiker",
     inhalt:
       "Die Vorlesung Höhere Mathematik 1 vermittelt (zusammen mit der Folgevorlesung Höhere Mathematik 2) den Studierenden die Grundlagen der numerischen Mathematik für Informatiker und deren Anwendung mit Python. Inhalte sind Grundbegriffe der Rechnerarithmetik und Fehlerabschätzungen, numerische Instabilitäten, Lösungsmethoden für lineare Gleichungssysteme sowie die Berechnung von Eigenwerten und Eigenvektoren. // Unterrichtssprache: DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.ITM.HM1.19HS.pdf",
+    vorlesungsmaterial:
+      "C:\\Users\\krist\\OneDrive\\Documents\\3.1 Informationen über Ausbildungen\\CS-ZHAW-Studium-Unterrichtsunterlagen-Teilzeit\\3. Semester\\Höhere Mathematik für Informatiker 1 + 2\\HM1_Präsi.pdf",
   },
   // #endregion
 
