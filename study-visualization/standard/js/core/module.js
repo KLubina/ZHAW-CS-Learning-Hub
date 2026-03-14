@@ -8,19 +8,7 @@ window.StudienplanModule = {
   initialize() {
     if (this.hasMaterialClickListener) return;
 
-    document.addEventListener("click", (event) => {
-      const button = event.target.closest(".module-material-button");
-      if (!button) return;
-
-      event.preventDefault();
-      event.stopPropagation();
-
-      const materialPath = button.getAttribute("data-material-path");
-      if (!materialPath) return;
-
-      this.openMaterial(materialPath);
-    });
-
+    // Klick-Handler deaktiviert, damit echte <a>-Tags direkt vom Browser oder Add-ons verarbeitet werden
     this.hasMaterialClickListener = true;
   },
 
@@ -61,10 +49,11 @@ window.StudienplanModule = {
       const segments = normalized.split("/");
       const drive = segments.shift();
       const driveLetter = drive ? drive.charAt(0).toUpperCase() : "C";
-      const encodedPath = segments
-        .map((segment) => encodeURIComponent(segment))
-        .join("/");
-      return `file:///${driveLetter}:/${encodedPath}`;
+
+      // Für das Local Filesystem Links Add-on dürfen wir Spaces NICHT zu %20 machen,
+      // da die Windows CMD/Explorer %20 als wörtliches Zeichen interpretieren würde!
+      const unencodedPath = segments.join("/");
+      return `file:///${driveLetter}:/${unencodedPath}`;
     }
 
     return trimmedPath;
@@ -137,9 +126,12 @@ window.StudienplanModule = {
 
     const buttonsHtml = materials
       .map((materialPath, index) => {
-        const escapedPath = this.escapeAttribute(materialPath);
+        const fileHref = this.toFileHref(materialPath);
+        const escapedPath = this.escapeAttribute(fileHref);
         const label = materials.length > 1 ? `M${index + 1}` : "PDF";
-        return `<button type="button" class="module-material-button" data-material-path="${escapedPath}" title="Vorlesungsunterlagen öffnen">${label}</button>`;
+        // Da Add-ons oft auf target="_blank" negativ reagieren (weil es einen neuen Tab erzwingt bevor das Script greift),
+        // entfernen wir es und lassen den reinen Link:
+        return `<a href="${escapedPath}" class="module-material-button" title="Vorlesungsunterlagen öffnen">${label}</a>`;
       })
       .join("");
 
