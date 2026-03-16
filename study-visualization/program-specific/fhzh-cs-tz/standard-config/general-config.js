@@ -10,6 +10,10 @@ window.StudiengangGeneralConfig = {
         <br>
       <a href="https://www.zhaw.ch/storage/engineering/studium/bachelorstudium/studiengaenge/informatik/modultafeln/Modultafel_IT_TZ_DE.pdf" target="_blank" rel="noopener">Modultafel (PDF)</a>
       <br>
+      <a href="https://gpmpublic.zhaw.ch/GPMDocProdZPublic/1_Management/1_04_Governance/1_04_01_Fuehrungsgrundlagen/Z_SO_T_Anhang_Studienordnung_BSc_Informatik.pdf" target="_blank" rel="noopener">Informatik Studienordnung</a>
+      <br>
+      <a href="https://www.notes.zh.ch/appl/zhlex_r.nsf/WebView/BAF117BCF947396EC1258DA0004DB7AF/$File/414.252.3_29.1.08_130.pdf" target="_blank" rel="noopener">Allgemeine Rahmenprüfungsordnung</a>
+      <br>
     <a href="../../Modulgruppen-Informatik-ZHAW.pdf" target="_blank" rel="noopener">Modulgruppen (PDF)</a>
     <br>
     <a href="https://stundenplan.zhaw.ch/Default.aspx" target="_blank" rel="noopener">Stundenplan Standard</a>
