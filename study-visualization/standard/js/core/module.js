@@ -140,20 +140,25 @@ window.StudienplanModule = {
 
   // Erstelle HTML für ein einzelnes Modul
   renderModule(module) {
-    const ects = module.ects || 0;
+    const baseEcts = module.ects || 0;
+    const isWahlmodulPlaceholder = !!(
+      module.isPlaceholder && module.wahlmodulSource
+    );
+    const ects = isWahlmodulPlaceholder ? 0 : baseEcts;
     const category = module.standardcategory || "unknown";
     const name = module.name || "Unbekanntes Modul";
 
     // Berechne Größe basierend auf ECTS (4 ECTS = 100px)
     const baseSize = 100;
-    const scale = Math.sqrt(ects / 4);
+    const sizeEcts = baseEcts > 0 ? baseEcts : 4;
+    const scale = Math.sqrt(sizeEcts / 4);
     const size = baseSize * scale;
     const style = `width: ${size}px; height: ${size}px;`;
 
     // Platzhalter-Module speziell markieren
     let placeholderClass = "";
     let wahlmodulSourceAttr = "";
-    if (module.isPlaceholder && module.wahlmodulSource) {
+    if (isWahlmodulPlaceholder) {
       placeholderClass = "modul-platzhalter";
       wahlmodulSourceAttr = `data-wahlmodul-source="${module.wahlmodulSource}"`;
     }

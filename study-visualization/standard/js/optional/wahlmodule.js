@@ -8,7 +8,7 @@ window.StudienplanWahlmodule = {
   initialize() {
     // Klick-Listener für Platzhalter-Module
     document.addEventListener("click", (e) => {
-      const modul = e.target.closest(".modul-platzhalter");
+      const modul = e.target.closest(".modul[data-wahlmodul-source]");
       if (!modul) return;
 
       const source = modul.getAttribute("data-wahlmodul-source");
@@ -21,7 +21,9 @@ window.StudienplanWahlmodule = {
 
     // Check ob Platzhalter vorhanden sind
     setTimeout(() => {
-      const platzhalter = document.querySelectorAll(".modul-platzhalter");
+      const platzhalter = document.querySelectorAll(
+        ".modul[data-wahlmodul-source]",
+      );
       console.log("Platzhalter gefunden:", platzhalter.length);
     }, 1000);
 
